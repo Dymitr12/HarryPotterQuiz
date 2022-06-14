@@ -199,15 +199,63 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Upg-kp-UNi"/>
+                    <connections>
+                        <segue destination="nHC-7w-uci" kind="presentation" id="Dbw-to-nVd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="elU-do-6QR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-6" y="617"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Lwc-se-gEC">
+            <objects>
+                <navigationController modalPresentationStyle="fullScreen" id="nHC-7w-uci" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="v9K-HR-lxn"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="m96-dd-zuT">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zxq-96-mau" kind="relationship" relationship="rootViewController" id="wIl-gJ-X3D"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e2V-Oo-4AE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7" y="1359"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OX4-md-xhZ">
+            <objects>
+                <viewController id="zxq-96-mau" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PVm-2J-0vm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="art 4" translatesAutoresizingMaskIntoConstraints="NO" id="avc-Ye-VJK">
+                                <rect key="frame" x="0.0" y="52" width="414" height="810"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XMA-D8-9XW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="avc-Ye-VJK" firstAttribute="leading" secondItem="XMA-D8-9XW" secondAttribute="leading" id="6yi-m2-OgX"/>
+                            <constraint firstItem="XMA-D8-9XW" firstAttribute="bottom" secondItem="avc-Ye-VJK" secondAttribute="bottom" id="9tp-jm-8fW"/>
+                            <constraint firstItem="XMA-D8-9XW" firstAttribute="top" secondItem="avc-Ye-VJK" secondAttribute="top" constant="36" id="qDJ-21-dkh"/>
+                            <constraint firstItem="XMA-D8-9XW" firstAttribute="trailing" secondItem="avc-Ye-VJK" secondAttribute="trailing" id="r1Q-4S-zKp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tis-5n-jXX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GqR-0s-XPm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="1359"/>
+        </scene>
     </scenes>
     <resources>
         <image name="art" width="404" height="812"/>
         <image name="art 2" width="404" height="812"/>
+        <image name="art 4" width="404" height="812"/>
         <image name="header" width="404" height="812"/>
         <image name="herb" width="284" height="344"/>
         <image name="hp" width="339" height="393"/>
